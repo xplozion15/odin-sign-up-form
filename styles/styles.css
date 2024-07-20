@@ -1,0 +1,126 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    
+    
+}
+
+
+:root {
+    
+}
+
+h2 {
+
+    font-weight:bolder;
+    font-size: 1.4rem;
+    color: #37A3EB;
+    
+    
+    
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("../assets/font/Norse-Bold.otf");
+    
+  }
+
+
+  @font-face {
+    font-family: "PressStart2P-Regular";
+    src: url("../assets/font/PressStart2P-Regular.ttf");
+    
+  }
+
+
+
+
+#odin-logo { 
+    width: 55px;
+    height: 50px;
+    margin: 10px;
+
+}
+
+.odin-navbar {
+    position: absolute;
+    font-family: "Norse-Bold" ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    top: 5px;
+}
+
+
+
+
+
+
+.left-container, #mountain-image {
+    width: 60vw;
+    height: 100vh;
+    
+}
+
+
+.right-container {
+    font-family: 'PressStart2P-Regular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.85);
+    /* opacity: 0.6; */
+    width: 40vw;
+    height: 100vh;
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.7rem;
+  
+}
+
+input {
+    background-color:#2985c3;
+    opacity: 0.8;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.form-container {
+    color: white;
+    border: 5px dashed white;
+    width: 65%;
+    height: 65%;
+    padding: 50px
+}
+
+.form-div {
+    padding: 1rem;
+   display: flex;
+   flex-direction: column;
+}
+
+
+.form-div-last {
+    display: inline-block;
+    
+   
+}
+
+label {
+    padding-bottom: 0.5rem;
+}

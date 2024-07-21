@@ -195,7 +195,7 @@ form {
     width: 63%;
     height: 72%;
     padding: 30px;
-    overflow:scroll;
+    overflow: scroll !important;
 }
 
 

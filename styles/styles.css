@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    
 }
 
 
@@ -48,6 +48,7 @@
 body {
     display: flex;
     flex-direction: row;
+    overflow: hidden;
   
 }
 
@@ -79,7 +80,6 @@ h2:hover {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    /* font-size: 2.2rem; */
     font-size: clamp(0.5rem, 5vw, 2.2rem);
     color: white;
     top: 15px;
@@ -92,6 +92,7 @@ h2:hover {
 .left-container, #mountain-image {
     width: 60vw;
     height: 100vh;
+    
 }
 
 
@@ -183,13 +184,11 @@ input::placeholder {
 }
 
 
-form {
+
+.form-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.form-container {
     color: white;
     border: 1px solid var(--form-border-color);
     border-radius: 10px;
@@ -197,8 +196,9 @@ form {
     height: 72%;
     padding: 30px;
     overflow: scroll !important;
-    scrollbar-width:none;    
+    scrollbar-width:none;
 }
+
 
 
 

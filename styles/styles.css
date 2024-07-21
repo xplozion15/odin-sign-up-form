@@ -1,99 +1,101 @@
+/* reset */
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    
-
-
-}
-
-@font-face {
-    font-family: "Norse-Bold";
-    src: url("../assets/font/Norse-Bold.otf");
-
 }
 
 
-@font-face {
-    font-family: "PressStart2P-Regular";
-    src: url("../assets/font/PressStart2P-Regular.ttf");
 
-}
-
-
+/* custom properties */
 
 :root {
-    --blue-color:#0869b2;
-    --white-color:white;
+    --blue-color: #0869b2;
+    --form-border-color: white;
+    --form-element-blue: #008ffc;
+    --element-hover-color: #966a5d;
+    --right-container-background-color: rgba(0, 0, 0, 0.90);
+    --form-valid-color: #40916c;
+    --form-invalid-color: red;
+    --cursor-pointer: pointer;
+    --input-background-color: #2d2c2caf;
+    --button-border-color: gray;
+    --button-background-color: #262626;
+    --font-primary: 'PressStart2P-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-secondary: "Norse-Bold", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h2 {
-
-    font-weight: bolder;
-    font-size: 1.4rem;
-    color: var(--blue-color);
-    font-family: 'PressStart2P-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 15px;
-    padding-top: 0px;
 
 
 
+/* Self Hosted Fonts */
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url("../assets/font/Norse-Bold.otf");
 }
 
-h2:hover {
-    color:  #eb9f53;
-    cursor: pointer;
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url("../assets/font/PressStart2P-Regular.ttf");
 }
 
+
+
+
+/* styling */
 
 body {
     display: flex;
     flex-direction: row;
+}
 
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: var(--blue-color);
+    font-family: var(--font-primary);
+    padding-bottom: 15px;
 }
 
 
 
-
-
-
-
-#odin-logo {
-    width: 55px;
-    height: 50px;
-    margin: 10px;
-
+h2:hover {
+    color: var(--element-hover-color);
+    cursor: var(--cursor-pointer);
+    transition: 200ms;
 }
+
+
 
 .odin-navbar {
-    cursor: pointer;
+    cursor: var(--cursor-pointer);
     position: absolute;
-    font-family: "Norse-Bold";
+    font-family: var(--font-secondary);
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 2.2rem;
     color: white;
-    top: 5px;
+    top: 15px;
+    left: 5px;
 }
 
 
 
 
-
-
-.left-container,
-#mountain-image {
+.left-container, #mountain-image {
     width: 60vw;
     height: 100vh;
-
 }
+
 
 
 .right-container {
-    font-family: 'PressStart2P-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgba(0, 0, 0, 0.90);
+    font-family: var(--font-primary);
+    background-color: var(--right-container-background-color);
     width: 40vw;
     height: 100vh;
     padding: 5px;
@@ -102,64 +104,75 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 0.7rem;
-
 }
+
+
 
 a {
-    color: #0565af;
+    color: var(--form-element-blue);
+    text-decoration: none;
 }
+
 
 
 a:hover {
-    cursor: pointer;
-    color: #6c328d;
+    cursor: var(--cursor-pointer);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--element-hover-color);
 }
 
 
+
 input {
-    font-family: 'PressStart2P-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-primary);
     font-size: small;
-    background-color: #2d2c2caf;
+    background-color: var(--input-background-color);
     opacity: 0.8;
     color: white;
     height: 30px;
     border-radius: 5px;
     border-color: var(--blue-color);
-   text-indent: 2%;
+    text-indent: 2%;
 }
 
 
 
 
 input:valid {
-    border-color: #40916c;
+    border-color: var(--form-valid-color);
 }
 
+
+
 input:invalid {
-    border-color: red;
+    border-color: var(--form-invalid-color);
 }
 
 
 
 input:focus {
-    border-color:#008ffc;
+    border-color: var(--form-element-blue);
     outline: 0;
 }
 
 
 
 input:focus:invalid {
-    border-color: red;
+    border-color: var(--form-invalid-color);
 }
+
 
 
 input:placeholder-shown {
-    border-color: #008ffc;
+    border-color: var(--form-element-blue);
 }
 
+
 input:not(placeholder-shown) {
-    border-color:red;
+    border-color: var(--form-invalid-color);
 }
+
 
 
 input::placeholder {
@@ -172,14 +185,15 @@ input::placeholder {
 
 .form-container {
     color: white;
-    border: 2px solid var(--white-color);
+    border: 1px solid var(--form-border-color);
     border-radius: 10px;
     width: 63%;
-    height: 70%;
-    padding: 50px;
-    
-    
+    height: 72%;
+    padding: 30px;
+
 }
+
+
 
 .form-div {
     padding: 1rem;
@@ -189,43 +203,42 @@ input::placeholder {
 }
 
 
+
 .form-div-last {
     display: inline-block;
     padding-left: 4em;
     padding-right: 4em;
-    
-
-
 }
+
+
+
 
 label {
     padding-bottom: 0.5rem;
-    
 }
 
 
+
 button {
-    font-family: 'PressStart2P-Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-primary);
     font-size: 1em;
     font-weight: bolder;
-    background-color: #262626;
+    background-color: var(--button-background-color);
     color: white;
     padding: 12px;
     width: 38%;
     margin: auto;
     height: 50px;
     border-radius: 5px;
-    border: 3px solid gray;
+    border: 3px solid var(--button-border-color)
 }
 
- button:hover {
-    border: 3px solid #008ffc;
-    color: #028ffb;
-    background-color: #262626;
-    cursor: pointer;
- 
-
-    
-} 
 
 
+button:hover {
+    border: 3px solid var(--form-element-blue);
+    color: var(--form-element-blue);
+    background-color: var(button-background-color);
+    cursor: var(--cursor-pointer);
+    transition: 200ms;
+}

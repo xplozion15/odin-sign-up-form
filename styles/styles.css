@@ -196,8 +196,8 @@ form {
     height: 72%;
     padding: 30px;
     overflow: scroll !important;
+    scrollbar-width:none;    
 }
-
 
 
 .form-div {

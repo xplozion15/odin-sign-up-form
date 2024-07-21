@@ -186,9 +186,6 @@ input::placeholder {
 
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     color: white;
     border: 1px solid var(--form-border-color);
     border-radius: 10px;

@@ -10,62 +10,54 @@
 
 <body>
 
-
     <div class="odin-navbar">
-        <img src="/images/odin-logo.png" alt="odin-logo" id="odin-logo">
-        <p>THE ODIN PROJECT</p>
+
+        <p>🏔️</p>
+        <p>Highland Journey!</p>
     </div>
 
+    <div class="left-container">
+        <img src="/images/mountain.jpg" alt="mountain-image" id="mountain-image">
+    </div>
 
+    <div class="right-container">
+        <div class="form-container">
+            <h2>Highland Journey Hiking Club!</h2>
 
+            <form action="../redirect/himalayas.html">
+                <div class="form-div">
+                    <label for="name">Enter your name :</label>
+                    <input type="text" name="name" id="name" required placeholder=" My Name">
+                </div>
 
-    
-        <div class="left-container">
-            <img src="/images/mountain.jpg" alt="mountain-image" id="mountain-image">
+                <div class="form-div">
+                    <label for="password">Enter your password :</label>
+                    <input type="password" name="password" id="password" minlength="4" maxlength="10" required
+                        placeholder=" Enter password">
+                </div>
+
+                <div class="form-div">
+                    <label for="another-password">Re-enter your password :</label>
+                    <input type="password" name="another-password" id="another-password" minlength="4" maxlength="10"
+                        required placeholder=" Enter password">
+                </div>
+
+                <div class="form-div">
+                    <label for="email">Enter your e-mail :</label>
+                    <input type="email" name="email" id="email" required placeholder=" Enter Email-Id">
+                </div>
+
+                <div class="form-div">
+                    <button type="submit">Sign Up</button>
+                </div>
+
+                <div>
+                    <p class="form-div form-div-last">Already Signed Up? <a href="">Log in</a></p>
+                </div>
+            </form>
+
         </div>
-    
-    
-        <div class="right-container">
-            <div class="form-container">
-                <h2>Highland Journey Hiking Club!</h2>
-               
-               
-    
-                <form action="">
-                    <div class="form-div">
-                        <label for="name">Enter your name :</label>
-                        <input type="text" name="name" id="name" required placeholder=" My Name">
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="password">Enter your password :</label>
-                        <input type="password" name="password" id="password" minlength="4" maxlength="10" required placeholder=" Enter password">
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="another-password">Re-enter your password :</label>
-                        <input type="password" name="another-password" id="another-password" minlength="4" maxlength="10" required placeholder=" Enter password"> 
-                    </div>
-    
-                    <div class="form-div">
-                        <label for="email">Enter your e-mail :</label>
-                        <input type="email" name="email" id="email" required placeholder=" Enter Email-Id">
-                    </div>
-    
-                    <div class="form-div">
-                        <button type="submit">Sign Up</button>
-                    </div>
-    
-                    <div>
-                        <p class="form-div form-div-last">Already Signed Up? <a href="">Log in</a></p>
-                    </div>
-                </form>
-    
-            </div>
-        </div>
-
-
-   
+    </div>
 
 
 </body>

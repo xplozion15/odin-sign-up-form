@@ -60,6 +60,7 @@ h2 {
     font-family: var(--font-primary);
     padding-bottom: 15px;
     text-align: center;
+    line-height: 1.3;
 }
 
 

@@ -3,7 +3,7 @@
 
 Sign-Up Form Project
 
-Live Demo - [https://abhilash15500.github.io/odin-sign-up-form/](https://abhilash15500.github.io/odin-sign-up-form/)
+Live Demo - [https://xplozion15.github.io/odin-sign-up-form/](https://xplozion15.github.io/odin-sign-up-form/)
 
 What I Learned -
 
